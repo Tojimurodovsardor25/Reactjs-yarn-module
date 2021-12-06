@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  text-decoration: none !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= header start */
+header {
+  background: url(./img/nike_bg_02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 296px;
+}
+
+nav {
+  width: 1093px;
+  margin: auto !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .logo {
+  display: block;
+  margin-top: 10px !important;
+}
+
+nav ul {
+  display: flex;
+}
+
+header .title {
+  width: 1093px;
+  margin: 185px auto 0 !important;
+}
+
+header .title h1 {
+  color: #c0bc45;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+nav ul li a {
+  display: block;
+  padding: 19px 24px 21px 28px !important;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d4d4d;
+  transition: .5s;
+}
+
+header nav ul li a:hover {
+  background: #c1bc45;
+  color: #f7f7f7;
+}
+
+
+header .title {
+  width: 1093px;
+  margin: 185px auto 0;
+}
+
+header .title h1 {
+  color: #c0bc45;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+header .title p {
+  color: #4d4d4d;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+header .title p span {
+  font-weight: 900;
+  padding-left: 11px !important;
+  color: #000;
+}
+
+main {
+    padding: 90px 0 130px;
+}
+
+main .product {
+    width: 1111px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .product .product_left {
+    width: 540px;
+}
+
+main .product .product_left .left_info {
+    margin-top: 21px;
 }
