@@ -3,6 +3,9 @@ import Nav from './Nav'
 import Header from './Header'
 import Main from './Main'
 import navLogoimg from './img/nike logo.png'
+import MainImg from './img/main_03.png'
+import Mainright from './MainRight';
+import img1 from './img/main_06.png'
 function App() {
   return (
     <>
@@ -29,7 +32,7 @@ function App() {
         <div className="product">
           <div className="product_left">
             <div className="left_img">
-              <img src="#!" alt="png" />
+              <img src={MainImg} alt="png" />
             </div>
             <div className="left_info">
               <Main mainTitle="Кросовки" mainInfo="Nike Neoline" mainText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -42,21 +45,63 @@ function App() {
                         explicabo. Nemo enim ipsam voluptatem quia voluptas sit"/>
             </div>
           </div>
-          {/* <div className="product_right">
+          <div className="product_right">
             <div className="right_box">
               <div className="box_img">
-                <img src="#!" alt="png" />
+                <img src={img1} alt="png" />
               </div>
-
               <div className="box_info">
-                <h3>Кроссовки Nike Sport</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <Mainright rightTitle="Кроссовки Nike Sport" rightText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
               </div>
             </div>
-          </div> */}
+            <div className="right_box">
+              <div className="box_img">
+                <img src={img1} alt="png" />
+              </div>
+              <div className="box_info">
+                <Mainright rightTitle="Кроссовки Nike Sport" rightText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+              </div>
+            </div>
+            <div className="right_box">
+              <div className="box_img">
+                <img src={img1} alt="png" />
+              </div>
+              <div className="box_info">
+                <Mainright rightTitle="Кроссовки Nike Sport" rightText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+              </div>
+            </div>
+            <div className="right_box">
+              <div className="box_img">
+                <img src={img1} alt="png" />
+              </div>
+              <div className="box_info">
+                <Mainright rightTitle="Кроссовки Nike Sport" rightText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
+      <footer>
+        <nav>
+          <a href="#!" className="logo">
+            <img src={navLogoimg} alt="png" />
+          </a>
+          <ul>
+            <Nav title="Кроссовки" />
+            <Nav title="Кеды" />
+            <Nav title="Футболки" />
+            <Nav title="Шорты" />
+            <Nav title="Майки" />
+            <Nav title="Олимпийки" />
+            <Nav title="Толстовки" />
+          </ul>
+        </nav>
+        <p>Developped by Mirzaabdullayev &copy;</p>
+      </footer>
     </>
   );
 }
